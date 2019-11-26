@@ -1,0 +1,324 @@
+@font-face {
+    font-family: DS-DIGIT;
+    src: url('./icon/font/DS-DIGI.TTF'),url('./icon/font/DS-DIGIT.eot');
+}
+.cross-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-wrap: normal!important;
+}
+.cross-container .cross-con{
+    width: 48%;
+    height: 17%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+.cross-container .cross-top{
+    top: 0;
+    left: 26%;
+
+}
+.cross-container .cross-right{
+    top: 34%;
+    right: -13%;
+    transform: rotate(90deg);
+}
+.cross-container .cross-bottom{
+    bottom: 10%;
+    left: 26%;
+    transform: rotate(180deg);
+}
+.cross-container .cross-left{
+    left: -13%;
+    top: 34%;
+    right: -13%;
+    transform: rotate(-90deg);
+}
+.cross-container .cross-con-left{
+    flex: 1;
+    height: 100%;
+    position: relative;
+}
+.cross-container .cross-con-right{
+    flex: 1;
+    height: 100%;
+    position: relative;
+}
+/*斑马线*/
+.road-red-0{
+    background-image: url("./icon/svgicon/light/road-red-0.svg");
+    background-size: 100%;
+}
+.road-red-1{
+    background-image: url("./icon/svgicon/light/road-red-1.svg");
+    background-size: 100%;
+}
+.road-red-2{
+    background-image: url("./icon/svgicon/light/road-red-2.svg");
+    background-size: 100%;
+}
+.road-red-3{
+    background-image: url("./icon/svgicon/light/road-red-3.svg");
+    background-size: 100%;
+}
+.road-green-0{
+    background-image: url("./icon/svgicon/light/road-green-0.svg");
+    background-size: 100%;
+}
+.road-green-1{
+    background-image: url("./icon/svgicon/light/road-green-1.svg");
+    background-size: 100%;
+}
+.road-green-2{
+    background-image: url("./icon/svgicon/light/road-green-2.svg");
+    background-size: 100%;
+}
+.road-green-3{
+    background-image: url("./icon/svgicon/light/road-green-3.svg");
+    background-size: 100%;
+}
+/*灯柱*/
+.cross-container .cross-con-left-center{
+    position: absolute;
+    width: 10%;
+    height: 50%;
+    right: -2%;
+    bottom: -8%;
+    cursor: pointer;
+ }
+.cross-container .cross-con-right-center{
+    position: absolute;
+    width: 10%;
+    height: 50%;
+    left: 2%;
+    bottom: -8%;
+    cursor: pointer;
+}
+.cross-container .cross-con-left-edge{
+    position: absolute;
+    width: 10%;
+    height: 50%;
+    left: -16%;
+    bottom: 30%;
+    cursor: pointer;
+}
+.cross-container .cross-con-right-edge{
+    position: absolute;
+    width: 10%;
+    height: 50%;
+    right: -16%;
+    bottom: 30%;
+    cursor: pointer;
+}
+.light-red{
+    background-image: url("./icon/svgicon/light/light-red.svg");
+    background-size: cover;
+}
+.light-green{
+    background-image: url("./icon/svgicon/light/light-green.svg");
+    background-size: cover;
+}
+
+/*交通灯*/
+.cross-container .traffic-light-container{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    bottom: -70%;
+    width: 100%;
+    height: 70%;
+}
+.cross-container .traffic-light-container>div{
+    display: flex;
+    flex-direction: column;
+    border:1px solid #00A7E7;
+    border-radius: 5px;
+    margin-left: 0.4rem;
+    padding: 2%;
+    width: 10%;
+    height: 100%;
+}
+.cross-container .traffic-light-container>div span{
+    font-family: DS-DIGIT;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+}
+.traffic-light-left-red-0{
+    background-image: url("./icon/svgicon/left-red.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.traffic-light-left-red_first-0{
+    background-image: url("./icon/svgicon/first-red-left.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.traffic-light-before-red-0{
+    background-image: url("./icon/svgicon/bottom-red.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.traffic-light-before-red_first-0{
+     background-image: url("./icon/svgicon/first-red-bottom.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+ }
+.traffic-light-right-red-0{
+    background-image: url("./icon/svgicon/right-red.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.traffic-light-right-red_first-0{
+    background-image: url("./icon/svgicon/first-red-right.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.traffic-light-left-green-0{
+     background-image: url("./icon/svgicon/left-green.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+ }
+.traffic-light-left-green_first-0{
+    background-image: url("./icon/svgicon/first-green-left.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.traffic-light-before-green-0{
+    background-image: url("./icon/svgicon/bottom-green.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.traffic-light-before-green_first-0{
+    background-image: url("./icon/svgicon/first-green-bottom.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.traffic-light-right-green-0{
+    background-image: url("./icon/svgicon/right-green.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.traffic-light-right-green_first-0{
+    background-image: url("./icon/svgicon/first-green-right.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.traffic-light-left-yellow-0{
+    background-image: url("./icon/svgicon/left-yellow.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.traffic-light-before-yellow-0{
+    background-image: url("./icon/svgicon/bottom-yellow.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.traffic-light-right-yellow-0{
+    background-image: url("./icon/svgicon/right-yellow.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+/*通用*/
+.transform-90{
+    transform: rotate(-90deg);
+}
+.transform90{
+    transform: rotate(90deg);
+}
+/*闪烁*/
+@-webkit-keyframes twinkling{
+    0%{opacity:0.3;}
+    100%{opacity:1;}}
+@keyframes twinkling{
+    0%{opacity:0.3;}
+    100%{opacity: 1;}
+}
+@-moz-keyframes twinkling{
+    0%{opacity:0.3;}
+    100%{opacity:1;}
+}
+.lightFlash{
+    -webkit-animation: twinkling 1s infinite linear;
+    -moz-animation: twinkling 1s infinite linear;
+    animation: twinkling 1s infinite linear;
+}
+.cross-container .redColor{
+    color: #D31A07;
+    font-weight: 600;
+}
+
+/*弹窗*/
+.cross-container .popView{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8rem;
+    height: 3rem;
+    background-color: rgba(1,6,36,1);
+    border: 1px solid #019CDA;
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+}
+.cross-container .popView:after {
+    display:block;
+    content:'';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 0.5rem solid #019CDA;
+    border-bottom: 0.5rem solid transparent;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.cross-container .popView div{
+    width: 100%;
+    flex: 1;
+    text-align: center;
+}
+.cross-container .popView div:nth-child(1) span{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #00A7E7;
+}
+.cross-container .popView div:nth-child(2) span:nth-child(2){
+    color: #00A7E7;
+    font-size: 1.1rem;
+}
+.popView span{
+    font-size: 1rem;
+}
+
+/*详情*/
+.trafficInfo{
+    position: absolute;
+    bottom: 7%;
+    left: 0;
+    width: 84%;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+}
+.trafficInfo>div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.trafficInfo>div>div{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;;
+    align-content: center;
+    align-items: center;
+    text-shadow:2px 2px 7px #40E3FD;
+}
+.trafficInfo>div>div span:last-child{
+    color: #40E3FD;
+}

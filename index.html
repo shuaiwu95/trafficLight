@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>交通信号灯</title>
+    <style>
+        html,body{
+            font-size: 12px;
+        }
+        #cross_1_pCon{
+            margin-top: 80px;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="component/style3.css"/>
+    <script src="https://www.jq22.com/jquery/jquery-3.3.1.js"></script>
+    <script src="./component/TrafficLightR.js"></script>
+</head>
+<body>
+    <div id="cross_1_pCon">
+
+    </div>
+<script>
+    let config = {
+        id: 'cross_1',
+        pCon: $('#cross_1_pCon'),
+        'style': {
+            'width': '28rem',
+            'height': '28rem',
+            'margin': '0 auto',
+            'marginTop': '1rem'
+        },
+        zebraCrosses: [
+            {
+                name: 'top',
+                isShow: true,
+                'isShowInfo': false,
+                'lampSet': { // 灯柱设置
+                    'left': [
+                        {
+                            'num': '1', // 灯柱编号
+                            'pos': 'edge' // 位置 edge:边缘 center:中间
+                        },
+                        {
+                            'num': '2', // 灯柱编号
+                            'pos': 'center' // 位置 edge:边缘 center:中间
+                        }
+                    ], // 左侧斑马线
+                    'right': [
+                        {
+                            'num': '3', // 灯柱编号
+                            'pos': 'center' // 位置 edge:边缘 center:中间
+                        },
+                        {
+                            'num': '4', // 灯柱编号
+                            'pos': 'edge' // 位置 edge:边缘 center:中间
+                        }
+                    ]// 右侧斑马线
+                },
+                'lightSet': [ // 红绿灯设置
+                    { 'direction': 'left', 'num': '1' },
+                    { 'direction': 'before', 'num': '2' },
+                    { 'direction': 'right', 'num': '3' }
+                ]
+            }, {
+                'name': 'right',
+                'isShow': true,
+                'lampSet': { // 灯柱设置
+                    'left': [
+                        {
+                            'num': '5', // 灯柱编号
+                            'pos': 'edge' // 位置 edge:边缘 center:中间
+                        },
+                        {
+                            'num': '6', // 灯柱编号
+                            'pos': 'center' // 位置 edge:边缘 center:中间
+                        }
+                    ], // 左侧斑马线
+                    'right': [
+                        {
+                            'num': '7', // 灯柱编号
+                            'pos': 'center' // 位置 edge:边缘 center:中间
+                        },
+                        {
+                            'num': '8', // 灯柱编号
+                            'pos': 'edge' // 位置 edge:边缘 center:中间
+                        }
+                    ]// 右侧斑马线
+                },
+                'lightSet': [ // 红绿灯设置
+                    { 'direction': 'left', 'num': '4' },
+                    { 'direction': 'before', 'num': '5' },
+                    { 'direction': 'right', 'num': '6' }
+                ]
+            }, {
+                'name': 'bottom',
+                'isShow': true,
+                'lampSet': { // 灯柱设置
+                    'left': [
+                        {
+                            'num': '9', // 灯柱编号
+                            'pos': 'edge' // 位置 edge:边缘 center:中间
+                        },
+                        {
+                            'num': '10', // 灯柱编号
+                            'pos': 'center' // 位置 edge:边缘 center:中间
+                        }
+                    ], // 左侧斑马线
+                    'right': [
+                        {
+                            'num': '11', // 灯柱编号
+                            'pos': 'center' // 位置 edge:边缘 center:中间
+                        },
+                        {
+                            'num': '12', // 灯柱编号
+                            'pos': 'edge' // 位置 edge:边缘 center:中间
+                        }
+                    ]// 右侧斑马线
+                },
+                'lightSet': [ // 红绿灯设置
+                    { 'direction': 'left', 'num': '7' },
+                    { 'direction': 'before', 'num': '8' },
+                    { 'direction': 'right', 'num': '9' }
+                ]
+            }, {
+                'name': 'left',
+                'isShow': true,
+                'lampSet': { // 灯柱设置
+                    'left': [
+                        {
+                            'num': '13', // 灯柱编号
+                            'pos': 'edge' // 位置 edge:边缘 center:中间
+                        },
+                        {
+                            'num': '14', // 灯柱编号
+                            'pos': 'center' // 位置 edge:边缘 center:中间
+                        }
+                    ], // 左侧斑马线
+                    'right': [
+                        {
+                            'num': '15', // 灯柱编号
+                            'pos': 'center' // 位置 edge:边缘 center:中间
+                        },
+                        {
+                            'num': '16', // 灯柱编号
+                            'pos': 'edge' // 位置 edge:边缘 center:中间
+                        }
+                    ]// 右侧斑马线
+                },
+                'lightSet': [ // 红绿灯设置
+                    { 'direction': 'left', 'num': '10' },
+                    { 'direction': 'before', 'num': '11' },
+                    { 'direction': 'right', 'num': '12' }
+                ]
+            }
+        ]
+    }
+    let traffic = new TrafficLightR(config)
+    traffic.roadLightClickEventBack((event,objs)=>{
+        alert(objs.num)
+    })
+    traffic.setTrafficLightByCode({ seq: 5, state: 2, secondReading: 60, isBusFirst: false })
+    traffic.setTrafficLightByCode({ seq: 1, state: 1, secondReading: 50, isBusFirst: false })
+</script>
+</body>
+</html>
