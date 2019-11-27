@@ -54,7 +54,7 @@
 
 >  
 let traffic = new TrafficLightR(config) // 初始化此实例
->  // 内置方法
+ // 内置方法
 >  // 改变指定编号灯柱（斑马线）的颜色状态 seq灯柱编号 state状态 0 红色 1 绿色
 >  setLightByCode ({seq = Number,state = Number })
 >  // 更改指定编码交通指示灯的状态
