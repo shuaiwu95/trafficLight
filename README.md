@@ -3,9 +3,8 @@
 ### DEMO https://hulalalalala.github.io/trafficLight/index.html
 
 ### #========= API ==============#
-
-###  
- let config = {   
+ 
+### let config = {   
 'id': 'cross_id', // 组件唯一ID
        'pCon': null, // 父容器对象 jQuery dom 对象
         'rotate': 0, // 旋转角度 可根据路口角度进行设置 默认不旋转
