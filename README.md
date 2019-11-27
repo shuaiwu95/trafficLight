@@ -5,8 +5,7 @@
 ### #========= API ==============#
 
 > 
-let config = {
->   
+let config = {  
 'id': 'cross_id', // 组件唯一ID
 >       'pCon': null, // 父容器对象 jQuery dom 对象
 >       'rotate': 0, // 旋转角度 可根据路口角度进行设置 默认不旋转
@@ -52,7 +51,8 @@ let config = {
 >      ]
 > }
 
->  let traffic = new TrafficLightR(config) // 初始化此实例
+>  
+let traffic = new TrafficLightR(config) // 初始化此实例
 >  // 内置方法
 >  // 改变指定编号灯柱（斑马线）的颜色状态 seq灯柱编号 state状态 0 红色 1 绿色
 >  setLightByCode ({seq = Number,state = Number })
