@@ -1,5 +1,6 @@
 # trafficLight
 ### trafficLight 交通信号灯组件
+#### 使用它的理由：自适应屏幕 功能齐全 配置方便 界面美观 4K屏标准的SVG贴图
 ### DEMO https://hulalalalala.github.io/trafficLight/index.html
 
 ### #========= API ==============#
