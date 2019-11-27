@@ -4,7 +4,7 @@
 
 ### #========= API ==============#
 
-> 
+###  
  let config = {  
 > 
 'id': 'cross_id', // 组件唯一ID
@@ -52,7 +52,7 @@
 >      ]
 > }
 
->  
+### 
 let traffic = new TrafficLightR(config) // 初始化此实例
  // 内置方法
 >  // 改变指定编号灯柱（斑马线）的颜色状态 seq灯柱编号 state状态 0 红色 1 绿色
