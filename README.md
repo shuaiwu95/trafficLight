@@ -50,8 +50,6 @@
          }
       ]
 }
-```
-### 
 let traffic = new TrafficLightR(config) // 初始化此实例
  // 内置方法
   // 改变指定编号灯柱（斑马线）的颜色状态 seq灯柱编号 state状态 0 红色 1 绿色
@@ -62,3 +60,4 @@ let traffic = new TrafficLightR(config) // 初始化此实例
   // 鼠标 点击、滑过 灯柱 回调函数
   roadLightClickEventBack (func)
   func (event, { num: Number, id: String })=> {} // num 灯柱序号 id 容器 id
+  ```
