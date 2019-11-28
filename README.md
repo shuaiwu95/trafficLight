@@ -5,10 +5,10 @@
 
 ### #========= API ==============#
 
-let config = {   
-'id': 'cross_id', // 组件唯一ID
-       'pCon': null, // 父容器对象 jQuery dom 对象
-        'rotate': 0, // 旋转角度 可根据路口角度进行设置 默认不旋转
+  let config = {   
+  'id': 'cross_id', // 组件唯一ID
+         'pCon': null, // 父容器对象 jQuery dom 对象
+          'rotate': 0, // 旋转角度 可根据路口角度进行设置 默认不旋转
         'isShowInfo': false, // 是否显示基础信息
         'style': { // 样式设置
           'width': '28rem',
