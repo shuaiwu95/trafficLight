@@ -4,7 +4,7 @@
 ### DEMO https://hulalalalala.github.io/trafficLight/index.html
 
 ### #========= API ==============#
-
+··· javascript
   let config = {   
   'id': 'cross_id', // 组件唯一ID
          'pCon': null, // 父容器对象 jQuery dom 对象
@@ -50,7 +50,7 @@
          }
       ]
 }
-
+```
 ### 
 let traffic = new TrafficLightR(config) // 初始化此实例
  // 内置方法
